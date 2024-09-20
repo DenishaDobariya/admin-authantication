@@ -1,10 +1,10 @@
  # How to Download and Run the Project Locally
  
 1.Clone the repository :
-   git clone https://github.com/DenishaDobariya/node-authentication.git
+   git clone https://github.com/DenishaDobariya/admin-authantication.git
    
 2.Navigate to the project directory : 
-   cd node-authentication
+   cd admin-authantication
 
 3.Install dependencies : 
   npm install
