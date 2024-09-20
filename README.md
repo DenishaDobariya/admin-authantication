@@ -2,7 +2,7 @@
  
 1.Clone the repository :
    git clone https://github.com/DenishaDobariya/node_authentication.git
-
+   
 2.Navigate to the project directory : 
    cd node_authentication
 
