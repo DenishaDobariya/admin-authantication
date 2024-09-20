@@ -9,7 +9,7 @@
 3.Install dependencies : 
   npm install
 
-4.Set up a .env file for environment variables (e.g., MongoDB connection string, session secret) : 
+4.Set up a .env file for environment variables : 
   .env
 
 5.Run the application :
@@ -25,10 +25,14 @@ node_modules/
 
 .env
 
-# Project Description (LogIn/SignUp Admin Panel)
+# LogIn/SignUp Admin Panel
+
+# Description :
 This admin panel provides a user-friendly interface for users to register, log in, and manage their profiles. It features secure user registration with encrypted passwords and session management using cookies. Users can access a personalized dashboard and view their profile details. The backend is powered by Node.js, Express, and MongoDB, with EJS templating for the front end.
 
-🛠️ Technologies Used
+
+# 🛠️ Technologies Used :
+
 Node.js: Backend server
 
 Express.js: Web framework
@@ -45,7 +49,9 @@ Body-Parser: Middleware to parse incoming request bodies
 
 Bcrypt.js: Library for password encryption
 
-⚙️ Features
+
+# ⚙️ Features :
+
 User registration with encrypted passwords
 
 User login with session management using cookies
