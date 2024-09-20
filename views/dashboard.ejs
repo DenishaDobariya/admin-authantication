@@ -11,7 +11,7 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <div class="logo d-flex justify-content-center align-items-center">
-            <h5>LOGO</h5>   
+            <h5>LOGO</h5>
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
@@ -39,8 +39,8 @@
             <h2 class="d-none d-md-block">Admin Panel</h2>
             <div class="d-flex align-items-center">
                 <% if (user) { %>
-                    <span class="me-3">Welcome, <strong><%= user.name %></strong></span>
-                    <a href="/profile" class="btn btn-light">Profile</a>
+                    <img src="/<%= user.profilePicture %>" alt="Profile Picture" class="img-thumbnail" width="40" height="40">
+                    <span class="mx-2">Welcome, <strong><%= user.name %></strong></span>
                     <a href="/logout" class="btn btn-light">Logout</a>
                 <% } else { %>
                     <a href="/login" class="btn btn-light">Login</a>
@@ -53,10 +53,10 @@
     <!-- Content -->
     <div class="content p-4">
         <div class="row">
-            <div class="col-lg-6">
-                    <h5>
-                        Welcome <%= user.name %>
-                    </h5>
+            <div class="col-12 d-flex justify-content-center vh-100 align-items-center">
+                    <h1>
+                        Welcome <span class="fw-bold"><%= user.name %></span>
+                    </h1>
             </div>
         </div>
     </div>

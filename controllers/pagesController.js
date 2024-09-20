@@ -14,6 +14,7 @@ const renderDashboard = async (req, res) => {
         res.redirect('/login');
     }
 };
+
 const renderSignup = async (req, res) => {
     let user = null;
     if (req.cookies.userId) {
@@ -54,20 +55,22 @@ const signUpCon = async (req, res) => {
     }
 
     if (req.body.password === req.body.conPass) {
-        const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
+        const hashedPassword = await bcrypt.hash(req.body.password, 10); 
         const newUser = new User({
             name: req.body.name,
             email: req.body.email,
-            password: hashedPassword
+            password: hashedPassword,
+            profilePicture: req.file.path
         });
         await newUser.save();
-        res.cookie('userId', newUser._id.toString());
-        res.redirect('/dashboard');
+        res.clearCookie('userId');
+        res.redirect('/login'); 
     } else {
         console.log("Passwords do not match.");
         res.redirect('/signup');
     }
 };
+
 
 const logInCon = async (req, res) => {
     const user = await User.findOne({ email: req.body.email });

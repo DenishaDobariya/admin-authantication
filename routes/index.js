@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const pagesController = require('../controllers/pagesController');
+const upload = require('../config/imgdb')
 
 router.get('/', pagesController.renderDashboard);
 router.get('/dashboard', pagesController.renderDashboard);
@@ -12,7 +13,7 @@ router.get('/orders', pagesController.renderOrders);
 router.get('/settings', pagesController.renderSettings);
 router.get('/logout', pagesController.renderLogOut );
 
-router.post('/signup', pagesController.signUpCon);
+router.post('/signup', upload.single('profilePicture'), pagesController.signUpCon);
 router.post('/login', pagesController.logInCon);
 
 module.exports = router;
