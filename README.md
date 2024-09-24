@@ -1,3 +1,6 @@
+
+# LogIn/SignUp Admin Panel
+ 
  # How to Download and Run the Project Locally
 
 1. **Clone the repository**:
@@ -5,34 +8,35 @@
    git clone https://github.com/DenishaDobariya/admin-authantication.git
 
    
-2. **Navigate to the project directory**:
+3. **Navigate to the project directory**:
    ```bash
    cd admin-authantication
 
 
-3. **Install dependencies**:
+4. **Install dependencies**:
    ```bash
    npm install
 
 
-4.Set up a .env file for environment variables : 
-.env
+4. **Set up a .env file for environment variables**: 
+   ```bash
+   .env
 
 5. **Run the application**:
    ```bash
    npm start
 
-6.Open your browser and go to:
-http://localhost:3006
+6. **Open your browser and go to**:
+   ```bash
+   http://localhost:3006
 
  # .gitignore File
 Make sure the following items are ignored in your repository by including them in your .gitignore file:
 
-node_modules/
+node_modules
 
 .env
 
-# LogIn/SignUp Admin Panel
 
 # Description :
 This admin panel provides a user-friendly interface for users to register, log in, and manage their profiles. It features secure user registration with encrypted passwords and session management using cookies. Users can access a personalized dashboard and view their profile details. The backend is powered by Node.js, Express, and MongoDB, with EJS templating for the front end.
