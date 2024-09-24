@@ -1,5 +1,8 @@
 
 # LogIn/SignUp Admin Panel
+
+# Description :
+This admin panel provides a user-friendly interface for users to register, log in, and manage their profiles. It features secure user registration with encrypted passwords and session management using cookies. Users can access a personalized dashboard and view their profile details. The backend is powered by Node.js, Express, and MongoDB, with EJS templating for the front end.
  
  # How to Download and Run the Project Locally
 
@@ -36,10 +39,6 @@ Make sure the following items are ignored in your repository by including them i
 node_modules
 
 .env
-
-
-# Description :
-This admin panel provides a user-friendly interface for users to register, log in, and manage their profiles. It features secure user registration with encrypted passwords and session management using cookies. Users can access a personalized dashboard and view their profile details. The backend is powered by Node.js, Express, and MongoDB, with EJS templating for the front end.
 
 
 # 🛠️ Technologies Used :
