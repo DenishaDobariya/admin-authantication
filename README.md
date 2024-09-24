@@ -1,18 +1,25 @@
  # How to Download and Run the Project Locally
- 
-1.Clone the repository :
+
+1. **Clone the repository**:
+   ```bash
    git clone https://github.com/DenishaDobariya/admin-authantication.git
+
    
-2.Navigate to the project directory : 
+2. **Navigate to the project directory**:
+   ```bash
    cd admin-authantication
 
-3.Install dependencies : 
-  npm install
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+
 
 4.Set up a .env file for environment variables : 
-  .env
+.env
 
-5.Run the application :
+5. **Run the application**:
+   ```bash
    npm start
 
 6.Open your browser and go to:
