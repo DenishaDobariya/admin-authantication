@@ -36,7 +36,7 @@ This admin panel provides a user-friendly interface for users to register, log i
  # .gitignore File
 Make sure the following items are ignored in your repository by including them in your .gitignore file:
 
-node_modules
+node_modules /
 
 .env
 
